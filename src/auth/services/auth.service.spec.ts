@@ -42,7 +42,7 @@ describe('AuthService', () => {
     expect(service).toBeDefined();
   });
 
-  it('should return a message if valid email and password', async () => {
+  it('should return an access_token if valid email and password', async () => {
     const loginResult = await service.login('test@test.com', '123123');
     expect(loginResult).toMatchObject(mocks.loginSuccess);
   });
